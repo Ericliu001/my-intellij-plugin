@@ -16,4 +16,11 @@
         <listener class="com.github.ericliu001.myintellijplugin.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+    <actions>
+        <group id="MyPlugin.SampleMenu" text="MyIdeaDemo" description="Sample Menu" >
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action class="com.github.ericliu001.myintellijplugin.actions.SimpleAction"
+                    id="MyIdeaDemo.Actions.HelloAction" text="Say Hello!"/>
+        </group>
+    </actions>
 </idea-plugin>
